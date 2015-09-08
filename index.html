@@ -198,7 +198,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
@@ -213,7 +213,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -255,7 +255,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -286,7 +286,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># we have to massage the river and tunnel data to get what we need, also so the data is indexible by time.</span>
@@ -304,7 +304,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## now, we have too many columns. see:</span>
@@ -334,7 +334,7 @@ Tunnel data columns: [&apos;Station&apos; &apos;Date/Time (NA)&apos; &apos;DISCH
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## We need the &quot;01_00060&quot; column, which is discharge (CFS) from the river data. We&#39;ll rename it. </span>
@@ -351,7 +351,7 @@ Tunnel data columns: [&apos;Station&apos; &apos;Date/Time (NA)&apos; &apos;DISCH
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## The tunnel data is more difficult. The columns are misaligned, which means the &quot;Date/Time (NA)&quot; column is </span>
@@ -378,7 +378,7 @@ Tunnel data columns: [&apos;Station&apos; &apos;Date/Time (NA)&apos; &apos;DISCH
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## Now we have:</span>
@@ -405,7 +405,7 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -438,7 +438,7 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -452,7 +452,7 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -495,11 +495,11 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">riverdata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">merged2012</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">riverdata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">merged2012</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -510,7 +510,7 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -561,11 +561,11 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># sanity check for accuracy:</span>
-<span class="n">merged_point</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">&quot;2012-05-02 00:45:00&quot;</span><span class="p">]</span>
+<span class="n">merged_point</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">&quot;2012-05-02 00:45:00&quot;</span><span class="p">]</span>
 <span class="k">assert</span> <span class="n">riverdata</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">&quot;2012-05-02 00:45:00&quot;</span><span class="p">][</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">merged_point</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]</span>
 <span class="k">assert</span> <span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">&quot;2012-05-02 00:45:00&quot;</span><span class="p">][</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">merged_point</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]</span>
 <span class="k">print</span> <span class="s">&quot;test passed&quot;</span>
@@ -592,18 +592,18 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## now we add river and tunnel discharge to acquire the &quot;natural&quot; flow without diversions</span>
 
-<span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">merged2012</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2012</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="c">## something strange happened, had to drop this row</span>
-<span class="n">merged</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">&quot;2012-01-22 12:00:00&quot;</span><span class="p">)</span>
-<span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">merged2012</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">&quot;2012-01-22 12:00:00&quot;</span><span class="p">)</span>
+<span class="n">merged2012</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2012</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 
-<span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">merged2012</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">merged2012</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -614,7 +614,7 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -681,19 +681,19 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## Plot!</span>
 
-<span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
+<span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged2012</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
                                <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;River Discharge&quot;</span><span class="p">)</span>
-<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
+<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged2012</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
                                 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Tunnel Discharge&quot;</span><span class="p">)</span>
-<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
-                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
+<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2012</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged2012</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
                                  <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">Natural</span><span class="se">\&quot;</span><span class="s"> Flow&quot;</span><span class="p">,</span>
                                  <span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;tonexty&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Data</span><span class="p">([</span><span class="n">rivertrace</span><span class="p">,</span> <span class="n">tunneltrace</span><span class="p">,</span> <span class="n">naturaltrace</span><span class="p">])</span>
@@ -719,27 +719,23 @@ Tunnel data columns: [&apos;Tunnel Discharge (cfs)&apos;]
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/usr/local/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning:
-
-A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
-
-/usr/local/lib/python2.7/site-packages/plotly/plotly/plotly.py:1448: UserWarning:
-
-Estimated Draw Time Too Long
-
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The draw time for this plot will be slow for all clients.
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/usr/local/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning:
+
+A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~tony.cannistra/105.embed" height="525px" width="100%"></iframe>
@@ -753,7 +749,7 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;If the plot above doesn&#39;t load, view it here: &quot;</span><span class="p">,</span> <span class="n">plot_url</span><span class="o">.</span><span class="n">resource</span>
@@ -799,7 +795,7 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">dataparsers</span>
@@ -819,7 +815,7 @@ Estimated Draw Time Too Long
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[35]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -864,7 +860,7 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">tunnel2015</span> <span class="o">=</span> <span class="n">dataparsers</span><span class="o">.</span><span class="n">WaterData</span><span class="p">(</span><span class="s">&quot;data/2015/TWITUNCO_82715111916.txt&quot;</span><span class="p">)</span>
@@ -882,7 +878,7 @@ Estimated Draw Time Too Long
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[36]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -927,11 +923,11 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">river2015</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tunnel2015</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">merged2015</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">river2015</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tunnel2015</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">merged2015</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -942,7 +938,7 @@ Estimated Draw Time Too Long
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[37]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -993,15 +989,15 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">merged2015</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2015</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="c">## something strange happened, had to drop this row</span>
-<span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">merged2015</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2015</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 
-<span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">merged2015</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged2015</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">merged2015</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1012,7 +1008,7 @@ Estimated Draw Time Too Long
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[38]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1069,19 +1065,19 @@ Estimated Draw Time Too Long
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">## Plot!</span>
 
-<span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
+<span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2015</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged2015</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
                                <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;River Discharge&quot;</span><span class="p">)</span>
-<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
+<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2015</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged2015</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
                                 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Tunnel Discharge&quot;</span><span class="p">)</span>
-<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
-                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
+<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2015</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged2015</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
                                  <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">Natural</span><span class="se">\&quot;</span><span class="s"> Flow&quot;</span><span class="p">,</span>
                                  <span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;tonexty&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Data</span><span class="p">([</span><span class="n">rivertrace</span><span class="p">,</span> <span class="n">tunneltrace</span><span class="p">,</span> <span class="n">naturaltrace</span><span class="p">])</span>
@@ -1094,8 +1090,8 @@ Estimated Draw Time Too Long
 <span class="p">)</span>
 
 <span class="n">figure</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
-<span class="n">plot_url</span> <span class="o">=</span> <span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&quot;Roaring Fork Diversion 2012&quot;</span><span class="p">)</span>
-<span class="n">plot_url</span>
+<span class="n">new_plot_url</span> <span class="o">=</span> <span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&quot;Roaring Fork Diversion 2015&quot;</span><span class="p">)</span>
+<span class="n">new_plot_url</span>
 </pre></div>
 
 </div>
@@ -1107,32 +1103,55 @@ Estimated Draw Time Too Long
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/usr/local/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning:
-
-A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
-
-/usr/local/lib/python2.7/site-packages/plotly/plotly/plotly.py:1448: UserWarning:
-
-Estimated Draw Time Slow
-
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The draw time for this plot will be slow for clients without much RAM.
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/usr/local/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning:
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~tony.cannistra/105.embed" height="525px" width="100%"></iframe>
+A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+
+</pre>
+</div>
 </div>
 
+<div class="output_area"><div class="prompt output_prompt">Out[39]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~tony.cannistra/125.embed" height="525px" width="100%"></iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;If the plot above doesn&#39;t load, view it here: &quot;</span><span class="p">,</span> <span class="n">new_plot_url</span><span class="o">.</span><span class="n">resource</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>If the plot above doesn&apos;t load, view it here:  https://plot.ly/~tony.cannistra/125
+</pre>
+</div>
 </div>
 
 </div>
@@ -1150,7 +1169,7 @@ Estimated Draw Time Slow
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">dataparsers</span>
@@ -1171,7 +1190,7 @@ Estimated Draw Time Slow
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[41]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1216,7 +1235,7 @@ Estimated Draw Time Slow
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">tunneldata</span> <span class="o">=</span> <span class="n">dataparsers</span><span class="o">.</span><span class="n">WaterData</span><span class="p">(</span><span class="s">&quot;data/2008/TWITUNCO_90515064855.txt&quot;</span><span class="p">)</span>
@@ -1234,7 +1253,7 @@ Estimated Draw Time Slow
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[42]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1279,11 +1298,11 @@ Estimated Draw Time Slow
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">riverdata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">merged2008</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">tunneldata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">riverdata</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">left_index</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">merged2008</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1294,7 +1313,7 @@ Estimated Draw Time Slow
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[43]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1345,15 +1364,15 @@ Estimated Draw Time Slow
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">merged2008</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2008</span><span class="p">[[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="c">## something strange happened, had to drop this row</span>
-<span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">merged2008</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">merged2008</span><span class="p">[[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 
-<span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">merged</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">merged2008</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged2008</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">merged2008</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1364,7 +1383,7 @@ Estimated Draw Time Slow
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[44]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1421,17 +1440,17 @@ Estimated Draw Time Slow
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">rivertrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2008</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                               <span class="n">y</span> <span class="o">=</span> <span class="n">merged2008</span><span class="p">[</span><span class="s">&quot;River Discharge (cfs)&quot;</span><span class="p">],</span>
                                <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;River Discharge&quot;</span><span class="p">)</span>
-<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
+<span class="n">tunneltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2008</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                                <span class="n">y</span> <span class="o">=</span> <span class="n">merged2008</span><span class="p">[</span><span class="s">&quot;Tunnel Discharge (cfs)&quot;</span><span class="p">],</span>
                                 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Tunnel Discharge&quot;</span><span class="p">)</span>
-<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
-                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
+<span class="n">naturaltrace</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">merged2008</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">merged2008</span><span class="p">[</span><span class="s">&quot;Natural Flow (cfs)&quot;</span><span class="p">],</span>
                                  <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">Natural</span><span class="se">\&quot;</span><span class="s"> Flow&quot;</span><span class="p">,</span>
                                  <span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;tonexty&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Data</span><span class="p">([</span><span class="n">rivertrace</span><span class="p">,</span> <span class="n">tunneltrace</span><span class="p">,</span> <span class="n">naturaltrace</span><span class="p">])</span>
@@ -1444,8 +1463,8 @@ Estimated Draw Time Slow
 <span class="p">)</span>
 
 <span class="n">figure</span> <span class="o">=</span> <span class="n">graphobjs</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
-<span class="n">plot_url</span> <span class="o">=</span> <span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&quot;Roaring Fork Diversion 2008&quot;</span><span class="p">)</span>
-<span class="n">plot_url</span>
+<span class="n">plot_url_2008</span> <span class="o">=</span> <span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&quot;Roaring Fork Diversion 2008&quot;</span><span class="p">)</span>
+<span class="n">plot_url_2008</span>
 </pre></div>
 
 </div>
@@ -1473,12 +1492,39 @@ A true SSLContext object is not available. This prevents urllib3 from configurin
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[45]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~tony.cannistra/123.embed" height="525px" width="100%"></iframe>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;If the plot above doesn&#39;t load, view it here: &quot;</span><span class="p">,</span> <span class="n">plot_url_2008</span><span class="o">.</span><span class="n">resource</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>If the plot above doesn&apos;t load, view it here:  https://plot.ly/~tony.cannistra/123
+</pre>
+</div>
 </div>
 
 </div>
